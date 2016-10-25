@@ -1,0 +1,25 @@
+// Write a function that takes two numbers and multiplies them without using *
+//Stretch: write a curried version
+
+// Write a function that takes two arrays and returns a new array with all items in alphabetical order.
+
+function multiply (x, y) {
+	var result = 0;
+	for (var i =0; i < y; i++) {
+	result += x;
+}
+return result;
+}
+
+multiply(2,5);
+
+//takes 2 strings, combines them, and sorts them in alpha
+
+arr1 = ["dog", "cat"];
+arr2 = ["horse", "monkey"];
+
+function sort(arr1, arr2){
+return arr1.concat(arr2).sort();
+}
+
+sort(arr1, arr2)
