@@ -3,42 +3,42 @@
 //create destination
 const context = new AudioContext();
 
-//create oscillator1(sound)
-var oscillator1 = context.createOscillator();
-
-//create gain1(volume) node
-var gain1 = context.createGain();
-
-//connect oscillator to gain1 node
-oscillator1.connect(gain1);
-
-//connect gain to destination
-gain1.connect(context.destination);
-
-//set oscillator starting frequency
-oscillator1.frequency.value = 240;
-
-//set type of sound wave for oscillator
-oscillator1.type = 'sine';
-
-//start oscillator
-oscillator1.start();
-
-//start oscillator, control volume
-gain1.volume.value = 1;
-gain1.volume.value = 0;
-
-// //create oscillator2 and gain2
-// var oscillator2 = context.createOscillator();
-// var gain2 = context.createGain();
+// //create oscillatorLeft (sound)
+// var oscillatorLeft = context.createOscillator();
 //
-// oscillator2.connect(gain2);
-// gain2.connect(context.destination);
-// oscillator2.frequency.value = 200;
-// oscillator2.type = 'sine';
-// oscillator2.start();
-// gain2.volume.value = 0;
-// // gain2.volume.value = 0;
+// //create gainLeft (volume) node
+// var gainLeft = context.createGain();
+//
+// //connect oscillator to gain node
+// oscillatorLeft.connect(gainLeft);
+//
+// //connect gain to destination
+// gainLeft.connect(context.destination);
+//
+// //set oscillator starting frequency
+// oscillatorLeft.frequency.value = 240;
+//
+// //set type of sound wave for oscillator
+// oscillatorLeft.type = 'sine';
+//
+// //start oscillator
+// oscillatorLeft.start();
+//
+// //Left volume control
+// // gainLeft.volume.value = 1;
+// gainLeft.volume.value = 0;
+
+//create oscillatorRight and gainRight
+var oscillatorRight = context.createOscillator();
+var gainRight = context.createGain();
+
+oscillatorRight.connect(gainRight);
+gainRight.connect(context.destination);
+oscillatorRight.frequency.value = 200;
+oscillatorRight.type = 'sine';
+oscillatorRight.start();
+gainRight.volume.value = 0;
+// gainRight.volume.value = 0;
 
 
 
