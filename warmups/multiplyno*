@@ -20,6 +20,8 @@ arr2 = ["horse", "monkey"];
 
 function sort(arr1, arr2){
 return arr1.concat(arr2).sort();
+//return [...arr1, ...arr2].sort();
+//spread operator (takes all from array1 and lists out), rest operator (function(rest(firstNumber = first arg passed, ...myArgs = picks up the rest of the arguements))) ES6 features!
 }
 
-sort(arr1, arr2)
+sort(arr1, arr2);
