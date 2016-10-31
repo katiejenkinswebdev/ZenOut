@@ -4,19 +4,18 @@
 $( document ).ready(function() {
 
 //API functionality
-var quote = $("#quote");
-var xhr = $.getJSON('http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?');
+var quoteScreen = $("#quoteText");
+console.log(quoteScreen);
+var $xhr =  $.getJSON('http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?');
 
-xhr.done(function(data) {
-    if (xhr.status !== 200) {
-        return;
+$xhr.done(function(data) {
+    if ($xhr.status === 200) {
+      console.log($(quoteScreen).text($xhr.responseJSON.quoteText + $xhr.responseJSON.quoteAuthor));
     }
-    var results = xhr.responseJSON.quoteText + xhr.responseJSON.quoteAuthor;
 
-    console.log(quote);
 });
 
-xhr.fail(function(err) {
+$xhr.fail(function(err) {
     console.log(err);
 });
 
