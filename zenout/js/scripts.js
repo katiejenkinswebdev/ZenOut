@@ -19,7 +19,7 @@ $xhr.fail(function(err) {
     console.log(err);
 });
 
-});//document ready
+
 
 
 //binaural beats application
@@ -35,7 +35,6 @@ const context = new AudioContext();
 var masterVolume = context.createGain();
 masterVolume.gain.value = 1;
 masterVolume.connect(context.destination);
-// masterVolume.volume.value = 1;
 
 //create oscillatorLeft (sound)
 var oscillatorLeft = context.createOscillator();
@@ -43,11 +42,18 @@ var oscillatorLeft = context.createOscillator();
 //create gainLeft (volume) node
 var gainLeft = context.createGain();
 
-//connect oscillator to gain node
+//create panLeft (left ear only)
+var panLeft = context.createStereoPanner();
+panLeft.pan.value = -1;
+
+// connect oscillator to gain node
 oscillatorLeft.connect(gainLeft);
 
-//connect gain to destination
-gainLeft.connect(masterVolume);
+//connect gainLeft to panLeft
+gainLeft.connect(panLeft);
+
+//connect panLeft to masterVolume
+panLeft.connect(masterVolume);
 
 //set oscillator starting frequency
 oscillatorLeft.frequency.value = 100;
@@ -58,24 +64,40 @@ oscillatorLeft.type = 'sine';
 //start oscillator
 oscillatorLeft.start();
 
-// Left volume control
-gainLeft.volume.value = 1;
+// Left volume control -- not working as Master Volume is controlling
+// gainLeft.volume.value = 1;
 // gainLeft.volume.value = 0;
 
 //create oscillatorRight and gainRight
-var oscillatorRight = context.createOscillator();
-var gainRight = context.createGain();
+// var oscillatorRight = context.createOscillator();
+// var gainRight = context.createGain();
+//
+// oscillatorRight.connect(gainRight);
+// gainRight.connect(masterVolume);
+//
+// oscillatorRight.frequency.value = 400;
+// oscillatorRight.type = 'sine';
+// // oscillatorRight.start();
+// gainRight.volume.value = 1;
+// // gainRight.volume.value = 0;
 
-oscillatorRight.connect(gainRight);
-gainRight.connect(masterVolume);
+});//document ready end tag
 
-oscillatorRight.frequency.value = 400;
-oscillatorRight.type = 'sine';
-oscillatorRight.start();
-gainRight.volume.value = 1;
-// gainRight.volume.value = 0;
+//connect pan nodes to R and L ear
+//left frequency plays in L ear
+//right frequency plays in R ear
+//connect all nodes into merge node
+//connect merge node into master volume node
+
+//both frequency play at same time in respective ears
+//introduce following variables: base frequency, binaural frequency, new frequency
+//javascript takes base frequency in L ear
+//javascript calculates frequency minus binaural frequency = var newFrequency
+//javascript takes newFrequency and pumps into R ear
 
 
+//user inputs base frequency
+//user inputs binaural frequency
+//user inputs binaural frequency volume
 
-// //create master gain node = name it specifically var masterGainNode
-// //create another oscillator = name that specifically oscLeft/oscRight = give each their own gain...gainLeft/gainRight. gain and osc will always be paired together. set up pan node (look up...prolly between 0 and 100) and connect between osc and gain...so osc pan gain
+//user selects wav file - bbeats is overlayed with wav file
