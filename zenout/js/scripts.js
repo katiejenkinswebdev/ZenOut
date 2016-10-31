@@ -62,24 +62,24 @@ oscillatorLeft.frequency.value = 100;
 oscillatorLeft.type = 'sine';
 
 //start oscillator
-oscillatorLeft.start();
+// oscillatorLeft.start();
 
-// Left volume control -- not working as Master Volume is controlling
-// gainLeft.volume.value = 1;
-// gainLeft.volume.value = 0;
 
 //create oscillatorRight and gainRight
-// var oscillatorRight = context.createOscillator();
-// var gainRight = context.createGain();
-//
-// oscillatorRight.connect(gainRight);
-// gainRight.connect(masterVolume);
-//
-// oscillatorRight.frequency.value = 400;
-// oscillatorRight.type = 'sine';
-// // oscillatorRight.start();
-// gainRight.volume.value = 1;
-// // gainRight.volume.value = 0;
+var oscillatorRight = context.createOscillator();
+var gainRight = context.createGain();
+var panRight = context.createStereoPanner();
+panRight.pan.value = 1;
+
+oscillatorRight.connect(gainRight);
+gainRight.connect(panRight);
+panRight.connect(masterVolume);
+
+oscillatorRight.frequency.value = 100;
+oscillatorRight.type = 'sine';
+oscillatorRight.start();
+gainRight.volume.value = 1;
+// gainRight.volume.value = 0;
 
 });//document ready end tag
 
