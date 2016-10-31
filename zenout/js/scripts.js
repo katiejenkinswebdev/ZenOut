@@ -64,8 +64,9 @@ oscillatorLeft.frequency.value = 120;
 //set type of sound wave for oscillator
 oscillatorLeft.type = 'sine';
 
-//start oscillator
+//oscillator control
 oscillatorLeft.start();
+// oscillator.stop();
 
 //--- RIGHT SIDE ---//
 //create oscillatorRight and gainRight
@@ -83,11 +84,13 @@ panRight.connect(merger, 0, 1);
 oscillatorRight.frequency.value = 100;
 oscillatorRight.type = 'sine';
 oscillatorRight.start();
+// oscillatorRight.stop();
 
 });//document.ready end tag
 
 //to do's
-
+//controls to turn bbeats on
+//control to turn bbeats off
 //javascript takes base frequency in L ear
 //javascript calculates frequency minus binaural frequency = var newFrequency
 //javascript takes newFrequency and pumps into R ear
