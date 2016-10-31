@@ -32,6 +32,7 @@ var masterVolume = context.createGain();
 masterVolume.gain.value = 1;
 masterVolume.connect(context.destination);
 
+//--- LEFT SIDE --//
 //create oscillatorLeft (sound)
 var oscillatorLeft = context.createOscillator();
 
@@ -48,14 +49,14 @@ oscillatorLeft.connect(gainLeft);
 //connect gainLeft to panLeft
 gainLeft.connect(panLeft);
 
-//connect panLeft to masterVolume
-// panLeft.connect(masterVolume);
-
 //create createChannelMerger
 var merger = context.createChannelMerger(2);
-panLeft.connect(merger, 0, 0);
 
+//connect ChannelMerger to masterVolume
 merger.connect(masterVolume);
+
+//connect panLeft to merger
+panLeft.connect(merger, 0, 0);
 
 //set oscillator starting frequency
 oscillatorLeft.frequency.value = 120;
@@ -66,18 +67,19 @@ oscillatorLeft.type = 'sine';
 //start oscillator
 oscillatorLeft.start();
 
-
+//--- RIGHT SIDE ---//
 //create oscillatorRight and gainRight
 var oscillatorRight = context.createOscillator();
 var gainRight = context.createGain();
 var panRight = context.createStereoPanner();
 panRight.pan.value = 1;
 
+//right connections
 oscillatorRight.connect(gainRight);
 gainRight.connect(panRight);
 panRight.connect(merger, 0, 1);
-// panRight.connect(masterVolume);
 
+//right oscillator attributes
 oscillatorRight.frequency.value = 100;
 oscillatorRight.type = 'sine';
 oscillatorRight.start();
@@ -85,11 +87,7 @@ oscillatorRight.start();
 });//document.ready end tag
 
 //to do's
-//connect all nodes into merge node (6 total for future)
-//connect merge node into master volume node
 
-//both frequency play at same time in respective ears
-//introduce following variables: base frequency, binaural frequency, new frequency
 //javascript takes base frequency in L ear
 //javascript calculates frequency minus binaural frequency = var newFrequency
 //javascript takes newFrequency and pumps into R ear
@@ -99,4 +97,6 @@ oscillatorRight.start();
 //user inputs binaural frequency
 //user inputs binaural frequency volume
 
+//upload wav files
+//connect 4 wavenodes into merger node
 //user selects wav file - bbeats is overlayed with wav file
