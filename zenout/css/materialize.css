@@ -4957,7 +4957,7 @@ small {
 .btn, .btn-large {
   text-decoration: none;
   color: #fff;
-  background-color: #26a69a;
+  background-color: blue-grey;
   text-align: center;
   letter-spacing: .5px;
   transition: .2s ease-out;
@@ -5985,7 +5985,7 @@ textarea.materialize-textarea + label:after {
 .input-field input[type=search]:focus + label i,
 .input-field input[type=search]:focus ~ .mdi-navigation-close,
 .input-field input[type=search]:focus ~ .material-icons {
-  color: #444;
+  color: #444 ;
 }
 
 .input-field input[type=search] + label {
