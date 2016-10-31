@@ -5,12 +5,11 @@ $( document ).ready(function() {
 
 //API functionality
 var quoteScreen = $("#quoteText");
-console.log(quoteScreen);
 var $xhr =  $.getJSON('http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?');
 
 $xhr.done(function(data) {
     if ($xhr.status === 200) {
-      console.log($(quoteScreen).text($xhr.responseJSON.quoteText + " " + $xhr.responseJSON.quoteAuthor));
+      $(quoteScreen).text($xhr.responseJSON.quoteText + " " + $xhr.responseJSON.quoteAuthor);
     }
 
 });
@@ -20,9 +19,7 @@ $xhr.fail(function(err) {
 });
 
 
-
-
-//binaural beats application
+//-------Binaural Beats Application---------//
 //allow to work on multiple browsers
 window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
@@ -31,7 +28,6 @@ const context = new AudioContext();
 
 //create Master Volume gain node and connect to destination
 
-//KT research - global effects compressor
 var masterVolume = context.createGain();
 masterVolume.gain.value = 1;
 masterVolume.connect(context.destination);
@@ -53,16 +49,22 @@ oscillatorLeft.connect(gainLeft);
 gainLeft.connect(panLeft);
 
 //connect panLeft to masterVolume
-panLeft.connect(masterVolume);
+// panLeft.connect(masterVolume);
+
+//create createChannelMerger
+var merger = context.createChannelMerger(2);
+panLeft.connect(merger, 0, 0);
+// panRight.connect(merger, 1, 0);
+merger.connect(masterVolume);
 
 //set oscillator starting frequency
-oscillatorLeft.frequency.value = 100;
+oscillatorLeft.frequency.value = 110;
 
 //set type of sound wave for oscillator
 oscillatorLeft.type = 'sine';
 
 //start oscillator
-// oscillatorLeft.start();
+oscillatorLeft.start();
 
 
 //create oscillatorRight and gainRight
@@ -73,20 +75,16 @@ panRight.pan.value = 1;
 
 oscillatorRight.connect(gainRight);
 gainRight.connect(panRight);
-panRight.connect(masterVolume);
+// panRight.connect(masterVolume);
 
 oscillatorRight.frequency.value = 100;
 oscillatorRight.type = 'sine';
 oscillatorRight.start();
-gainRight.volume.value = 1;
-// gainRight.volume.value = 0;
 
-});//document ready end tag
+});//document.ready end tag
 
-//connect pan nodes to R and L ear
-//left frequency plays in L ear
-//right frequency plays in R ear
-//connect all nodes into merge node
+//to do's
+//connect all nodes into merge node (6 total for future)
 //connect merge node into master volume node
 
 //both frequency play at same time in respective ears
