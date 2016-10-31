@@ -4,13 +4,16 @@
 $( document ).ready(function() {
 
 //API functionality
+var quote = $("#quote");
 var xhr = $.getJSON('http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?');
 
 xhr.done(function(data) {
     if (xhr.status !== 200) {
         return;
     }
-    console.log(xhr.responseJSON.quoteText + xhr.responseJSON.quoteAuthor);
+    var results = xhr.responseJSON.quoteText + xhr.responseJSON.quoteAuthor;
+
+    console.log(quote);
 });
 
 xhr.fail(function(err) {
