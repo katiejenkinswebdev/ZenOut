@@ -10,7 +10,7 @@ var $xhr =  $.getJSON('http://api.forismatic.com/api/1.0/?method=getQuote&lang=e
 
 $xhr.done(function(data) {
     if ($xhr.status === 200) {
-      console.log($(quoteScreen).text($xhr.responseJSON.quoteText + $xhr.responseJSON.quoteAuthor));
+      console.log($(quoteScreen).text($xhr.responseJSON.quoteText + " " + $xhr.responseJSON.quoteAuthor));
     }
 
 });
