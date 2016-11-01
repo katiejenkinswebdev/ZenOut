@@ -81,7 +81,7 @@ gainRight.connect(panRight);
 panRight.connect(merger, 0, 1);
 
 //right oscillator attributes
-oscillatorRight.frequency.value = 104;
+oscillatorRight.frequency.value = 125;
 oscillatorRight.type = 'sine';
 oscillatorRight.start();
 // oscillatorRight.stop();
