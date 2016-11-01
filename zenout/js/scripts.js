@@ -88,19 +88,40 @@ oscillatorRight.start();
 
 
 //---SLIDERS---//
+//---Base Frequency---//
 $(function(){
-
 	var currentBaseFreq = $('#base-freq-value');
 
 	$("#base-freq").change(function(){
 	    currentBaseFreq.html(this.value);
 	});
 
-	// Trigger the event on load, so
-	// the value field is populated:
+  //triggers current value to display on load
+	$("#base-freq").change();
+});
 
-	$('#defaultSlider').change();
+//---Binaural Frequency---//
+$(function(){
+	var currentBaseFreq = $('#binaural-freq-value');
 
+	$("#binaural-freq").change(function(){
+	    currentBaseFreq.html(this.value);
+	});
+
+  //triggers current value to display on load
+	$("#binaural-freq").change();
+});
+
+//---Binaural Beats Volume (Master Volume)---//
+$(function(){
+	var currentBaseFreq = $('#binaural-beats-value');
+
+	$("#bin-beats-volume").change(function(){
+	    currentBaseFreq.html(this.value);
+	});
+
+  //triggers current value to display on load
+	$("#bin-beats-volume").change();
 });
 
 
