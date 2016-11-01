@@ -33,8 +33,17 @@ p {
   font-size: 30px;
 }
 
-.card {
-  padding-left: 100px;
+.learn {
+  height: 200px ;
+  width: 200px;
+
+}
+
+#learn_zen_book {
+  height: 200px;
+  width: 210px;
+  display: block;
+  margin: auto;
 }
 
 @media only screen and (max-width : 992px) {
