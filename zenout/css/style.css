@@ -29,6 +29,10 @@ p {
     width: 100%;
   }
 
+#quoteText {
+  font-size: 30px;
+}
+
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
