@@ -86,6 +86,13 @@ oscillatorRight.type = 'sine';
 oscillatorRight.start();
 // oscillatorRight.stop();
 
+
+//---SLIDERS---//
+
+
+
+
+
 });//document.ready end tag
 
 //to do's

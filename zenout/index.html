@@ -58,27 +58,29 @@
 <!-- 1st Slider -->
   <div class = "container">
     <div class = "row">
-      <div class = "col s4 m4">
-        <div class = "center">
+      <div class = "col s4 m4" id ="volume-control">
+        <label for = "volume" id ="volume">VOLUME</label>
+          <input type ="range" name = "volume" id = "volume-slider" min = "0" max = "1" step =".01">
         <h5 class = "center">Base Frequency</h5>
-      </div>
       </div>
 
 <!-- 2nd Slider -->
-    <div class = "col s4 m4">
-      <div class = "center">
-        <h5 class = "center">Binaural Beats Frequency</h5>
-      </div>
-    </div>
+<div class = "col s4 m4" id ="volume-control">
+  <label for = "volume" id ="volume">VOLUME</label>
+    <input type ="range" name = "volume" id = "volume-slider" min = "0" max = "1" step =".01">
+  <h5 class = "center">Binaural Beat Frequency</h5>
+</div>
+
 
   <!-- 3rd Slider -->
-      <div class = "col s4 m4">
-        <div class = "center">
-          <h5 class = "center">Binaural Beats Volume</h5>
-        </div>
-      </div>
+    <div class = "col s4 m4" id ="volume-control">
+      <label for = "volume" id ="volume">VOLUME</label>
+        <input type ="range" name = "volume" id = "volume-slider" min = "0" max = "1" step =".01">
+      <h5 class = "center">Beat Volume</h5>
     </div>
-  </div> <!--container-->
+
+  </div> <!--row-->
+</div> <!--container-->
 
 
 <!-- Three Column Section   -->
@@ -251,8 +253,6 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/scripts.js"></script>
-  <script src="js/jquery-1.7.2.min.js"></script>
-  <script src="js/jquery-ui-1.8.21.custom.min.js"></script>
 
   </body>
 </html>
