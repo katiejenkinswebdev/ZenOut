@@ -86,7 +86,6 @@ oscillatorRight.type = 'sine';
 oscillatorRight.start();
 // oscillatorRight.stop();
 
-
 //---SLIDERS---//
 //---Base Frequency---//
 $(function(){
@@ -112,18 +111,57 @@ $(function(){
 	$("#binaural-freq").change();
 });
 
-//---Binaural Beats Volume (Master Volume)---//
+//---Binaural Beats (Master Volume)---//
 $(function(){
 	var currentBaseFreq = $('#binaural-beats-value');
 
-	$("#bin-beats-volume").change(function(){
+	$("#masterVolume").change(function(){
 	    currentBaseFreq.html(this.value);
 	});
 
   //triggers current value to display on load
-	$("#bin-beats-volume").change();
+	$("#masterVolume").change();
 });
 
+//---Master Volume---//
+// console.log(masterVolume.gain.value);
+var masterVolumeSlider = document.getElementById("masterVolume");
+// masterVolume = totalVolume;
+
+this.addEventListener("change", function(setVolume) {
+  console.log("clicked");
+
+  masterVolume.gain.value = masterVolumeSlider.value/100;
+  console.log(masterVolume.gain.value);
+
+});
+
+
+
+// p.addEventListener("click");
+// console.log("clicked");
+// .addEventListener("change", function () {
+
+// console.log(masterVolume);
+
+// function setVolume() {
+//     console.log(masterVolume.value);
+// }
+
+
+// function changeVolume() {
+//   document.getElementById("range");
+//   console.log(changeVolume);
+//
+//   // .addEventListener("click", setVolume);
+// };
+// console.log(changeVolume);
+//
+//
+// function setVolume () {
+//   masterVolume.gain.value = masterVolume.gain.value/100;
+// }
+// console.log(setVolume);
 
 });//document.ready end tag
 
