@@ -59,7 +59,7 @@ merger.connect(masterVolume);
 panLeft.connect(merger, 0, 0);
 
 //set oscillator starting frequency
-oscillatorLeft.frequency.value = 120;
+oscillatorLeft.frequency.value = 100;
 
 //set type of sound wave for oscillator
 oscillatorLeft.type = 'sine';
@@ -81,7 +81,7 @@ gainRight.connect(panRight);
 panRight.connect(merger, 0, 1);
 
 //right oscillator attributes
-oscillatorRight.frequency.value = 100;
+oscillatorRight.frequency.value = 104;
 oscillatorRight.type = 'sine';
 oscillatorRight.start();
 // oscillatorRight.stop();
