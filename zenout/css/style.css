@@ -72,3 +72,14 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+
+#ageInput {
+    margin: 60px 30px 0 30px
+}
+
+#ageInput > .ui-slider-handle {
+    text-decoration: none;
+    width: 35px;
+    text-align: center;
+}

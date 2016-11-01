@@ -60,22 +60,22 @@
 <div class = "container">
   <div class = "row">
     <h3 class = "center">create your beats</h3>
-    <div class = "col s4 m4" id ="base-frequency">
-      <input type ="range" name = "volume" id = "volume-slider" min = "0" max = "1" step =".01">
+
+    <div class = "col s4 m4">
       <h5 class = "center">Base Frequency</h5>
+      <input type ="range" name = "volume" id = "base-freq" min = "0" max = "100" step ="1">
+      <p class="center note">Value: <span id="base-freq-value">0</span></p>
     </div>
 
-<!-- Binaural Frequency Slider -->
-    <div class = "col s4 m4" id ="binaural-frequency">
-        <input type ="range" name = "volume" min = "0" max = "1" step =".01">
-      <h5 class = "center">Binaural Beat Frequency</h5>
+    <div class = "col s4 m4">
+      <input type ="range" name = "volume" id = "binaural-freq" min = "0" max = "100" step ="1">
+      <p class="center note">Value: <span id="binaural-freq-value">0</span></p>
+      <h5 class = "center">Binaural Frequency</h5>
     </div>
 
-
-  <!-- Volume Control Slider -->
-    <div class = "col s4 m4" id ="volume-control">
-        <input type ="range" name = "volume" min = "0" max = "1" step =".01">
-      <h5 class = "center">Beat Volume</h5>
+    <div class = "col s4 m4">
+      <input type ="range" name = "volume" id = "volume-slider" min = "0" max = "100" step ="1">
+      <h5 class = "center">Volume</h5>
     </div>
 
   </div> <!--row-->

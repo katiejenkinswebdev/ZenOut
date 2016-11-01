@@ -88,9 +88,20 @@ oscillatorRight.start();
 
 
 //---SLIDERS---//
+$(function(){
 
+	var currentBaseFreq = $('#base-freq-value');
 
+	$("#base-freq").change(function(){
+	    currentBaseFreq.html(this.value);
+	});
 
+	// Trigger the event on load, so
+	// the value field is populated:
+
+	$('#defaultSlider').change();
+
+});
 
 
 });//document.ready end tag
