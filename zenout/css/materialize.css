@@ -2739,8 +2739,8 @@ i.large {
 
 img.responsive-img,
 video.responsive-video {
-  max-width: 100%;
-  height: auto;
+  max-width: 110px;
+  height: 100px;
 }
 
 .pagination li {

@@ -205,17 +205,9 @@ this.addEventListener("change", function(setBinauralValue) {
       document.getElementById('beta').className = 'icon-block';
       document.getElementById('delta').className = 'icon-block';
       break;
-
-    //   break;
     default:
-
   }
 });
-
-
-
-
-
 
 //--- Toggle Sounds ---//
 //--- Rainforest --//
@@ -233,6 +225,7 @@ console.log("play");
   }
 });
 
+//--- Ocean ---//
 var ocean = document.getElementById("ocean");
 
 player2.addEventListener("click", function(playOcean) {
@@ -247,6 +240,7 @@ console.log("play");
   }
 });
 
+//--- Thunderstorm --//
 var thunderstorm = document.getElementById("thunderstorm");
 
 player3.addEventListener("click", function(playThunderstorm) {
@@ -258,6 +252,7 @@ console.log("play");
   thunderstorm.pause();
   console.log("pause");
   }
+
 });
 
 
