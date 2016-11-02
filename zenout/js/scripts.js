@@ -87,7 +87,7 @@ oscillatorRight.start();
 // oscillatorRight.stop();
 
 //---Slider Values---//
-//---Base Frequency---//
+//---Base Frequency Value---//
 $(function(){
 	var currentBaseFreq = $('#base-freq-value');
 	$("#base-freq").change(function(){
@@ -97,7 +97,7 @@ $(function(){
 	$("#base-freq").change();
 });
 
-//---Binaural Frequency---//
+//---Binaural Frequency Value---//
 $(function(){
 	var currentBaseFreq = $('#binaural-freq-value');
 	$("#binaural-freq").change(function(){
@@ -107,7 +107,7 @@ $(function(){
 	$("#binaural-freq").change();
 });
 
-//---Binaural Beats (Master Volume)---//
+//---Binaural Beats (Master Volume) Value---//
 $(function(){
 	var currentBaseFreq = $('#binaural-beats-value');
 	$("#masterVolume").change(function(){
@@ -131,22 +131,45 @@ var baseFrequencySlider = document.getElementById("base-freq");
 
 
 this.addEventListener("change", function(setBaseValue) {
-  console.log(oscillatorLeft.frequency.value);
-  console.log(baseFrequencySlider.value);
+  // console.log(oscillatorLeft.frequency.value);
+  // console.log(baseFrequencySlider.value);
   // console.log(oscillatorLeft.frequency.value = baseFrequencySlider.value/100);
 
   oscillatorLeft.frequency.value = baseFrequencySlider.value;
 
   console.log(oscillatorLeft.frequency.value);
 
+});
+
+//---Binaural Frequency Slider ---//
+var binauralFrequencySlider = document.getElementById("binaural-freq");
+
+this.addEventListener("change", function(setBinauralValue) {
+
+  // console.log(parseFloat(oscillatorRight.frequency.value));
+  var newOscillatorRight = parseFloat(binauralFrequencySlider.value) + parseFloat(baseFrequencySlider.value);
+  // console.log(newOscillatorRight);
+
+
+  //  newOscillatorRight = oscillatorRight.value;
+  oscillatorRight.frequency.value = newOscillatorRight;
+  console.log(oscillatorRight.frequency.value);
+
+
+
+  //  + parseFloat(baseFrequencySlider.value) = oscillatorRight.frequency.value);
+
+  // console.log(baseFrequencySlider.value);
+  // var binauralFreq = parseFloat(oscillatorRight.frequency.value) + parseFloat ( baseFrequencySlider.value);
+  // console.log(binauralFreq);
+  // console.log(oscillatorRight.frequency.value);
+  // console.log(binauralFrequencySlider.value);
+  // console.log(oscillatorRight.frequency.value + baseFrequencySlider = binauralFrequencySlider.value);
+
+  // oscillatorLeft.frequency.value = baseFrequencySlider.value;
+
+  // console.log(oscillatorLeft.frequency.value);
 
 });
-  //
-  // oscillatorLeft.frequency.value = baseFrequencySlider.value/400;
-  //
-  //
-  //     oscillatorLeft.frequency.value =  baseFrequencySlider.value ;
-  //     oscillatorLeft.detune.value = $('#base-freq').val();
-
 
 });//document.ready end tag
