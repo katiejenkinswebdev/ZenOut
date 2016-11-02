@@ -59,7 +59,7 @@ merger.connect(masterVolume);
 panLeft.connect(merger, 0, 0);
 
 //set oscillator starting frequency
-oscillatorLeft.frequency.value = 100;
+// oscillatorLeft.frequency.value = 200;
 
 //set type of sound wave for oscillator
 oscillatorLeft.type = 'sine';
@@ -81,12 +81,12 @@ gainRight.connect(panRight);
 panRight.connect(merger, 0, 1);
 
 //right oscillator attributes
-oscillatorRight.frequency.value = 125;
+oscillatorRight.frequency.value = 100;
 oscillatorRight.type = 'sine';
 oscillatorRight.start();
 // oscillatorRight.stop();
 
-//---SLIDERS---//
+//---Slider Values---//
 //---Base Frequency---//
 $(function(){
 	var currentBaseFreq = $('#base-freq-value');
@@ -123,46 +123,30 @@ $(function(){
 	$("#masterVolume").change();
 });
 
-//---Master Volume---//
-// console.log(masterVolume.gain.value);
+//---Master Volume Slider---//
 var masterVolumeSlider = document.getElementById("masterVolume");
-// masterVolume = totalVolume;
 
 this.addEventListener("change", function(setVolume) {
-  console.log("clicked");
 
   masterVolume.gain.value = masterVolumeSlider.value/100;
-  console.log(masterVolume.gain.value);
-
+  // console.log(masterVolume.gain.value);
 });
 
+//---Base Frequency Slider---//
+var baseFrequencySlider =
+console.log(document.getElementById("base-freq"));
 
 
-// p.addEventListener("click");
-// console.log("clicked");
-// .addEventListener("change", function () {
+this.addEventListener("change", function(setBaseFreq) {
+  console.log("clicked");
 
-// console.log(masterVolume);
-
-// function setVolume() {
-//     console.log(masterVolume.value);
-// }
+  oscillatorLeft.frequency.value = baseFrequencySlider.value/400;
 
 
-// function changeVolume() {
-//   document.getElementById("range");
-//   console.log(changeVolume);
-//
-//   // .addEventListener("click", setVolume);
-// };
-// console.log(changeVolume);
-//
-//
-// function setVolume () {
-//   masterVolume.gain.value = masterVolume.gain.value/100;
-// }
-// console.log(setVolume);
+      // oscillatorLeft.frequency.value =  baseFrequencySlider.value ;
+      // oscillatorLeft.detune.value = $('#base-freq').val();
 
+});
 });//document.ready end tag
 
 //to do's
