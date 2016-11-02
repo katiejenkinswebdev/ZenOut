@@ -144,7 +144,7 @@ this.addEventListener("change", function(setBaseValue) {
 
   oscillatorLeft.frequency.value = baseFrequencySlider.value;
 
-  console.log(oscillatorLeft.frequency.value);
+  // console.log(oscillatorLeft.frequency.value);
 
 });
 
@@ -160,11 +160,35 @@ this.addEventListener("change", function(setBinauralValue) {
 
   //  newOscillatorRight = oscillatorRight.value;
   oscillatorRight.frequency.value = newOscillatorRight;
-  console.log(oscillatorRight.frequency.value);
+  // console.log(oscillatorRight.frequency.value);
 
+//--- Highlight Binaural Frequency--//
+  var frequency = document.getElementById("binaural-freq").value;
+
+  switch (true) {
+    case (frequency <= 4):
+      document.getElementById('delta').className += ' focus';
+      document.getElementById('theta').className = 'icon-block';
+      break;
+    case (frequency > 4 && frequency <= 8):
+      document.getElementById('theta').className
+      += ' focus';
+      document.getElementById('delta').className = 'icon-block';
+      break;
+    // case (frequency > 8 && frequency <= 14):
+    // console.log('Theta');
+    //   break;
+    default:
+
+  }
 });
 
-// //--- Toggle Sounds ---//
+
+
+
+
+
+//--- Toggle Sounds ---//
 //--- Rainforest --//
 var rainforest = document.getElementById("rainforest");
 
@@ -194,15 +218,15 @@ console.log("play");
   }
 });
 
-var rain = document.getElementById("rain");
+var thunderstorm = document.getElementById("thunderstorm");
 
-player3.addEventListener("click", function(playRain) {
+player3.addEventListener("click", function(playThunderstorm) {
 
-if (rain.paused) {
+if (thunderstorm.paused) {
 console.log("play");
-  rain.play();
+  thunderstorm.play();
 } else {
-  rain.pause();
+  thunderstorm.pause();
   console.log("pause");
   }
 });

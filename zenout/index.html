@@ -64,21 +64,21 @@
     <!-- Base Frequency Slider -->
       <div class = "col s4 m4">
         <h5 class = "center">Base Frequency</h5>
-        <input type ="range" name = "volume" id = "base-freq" min = "100" max = "400" step ="1">
-        <p class="center note"><span id="base-freq-value">0</span></p>
+        <input type ="range" id = "base-freq" min = "100" max = "400" step ="1">
+        <p class="center note"><span id="base-freq-value">0</span>Hz</p>
       </div>
 
     <!--Binaural Frequency Slider -->
       <div class = "col s4 m4">
         <h5 class = "center">Binaural Frequency</h5>
-        <input type ="range" name = "volume" id = "binaural-freq" min = "1" max = "44" step ="1">
-        <p class="center note"><span id="binaural-freq-value">0</span></p>
+        <input type ="range" id = "binaural-freq" min = "1" max = "60" step ="1">
+        <p class="center note"><span id="binaural-freq-value">0</span>Hz</p>
       </div>
 
       <!-- Master Volume Slider -->
         <div class = "col s4 m4">
           <h5 class = "center">Volume</h5>
-          <input type ="range" name = "volume" id = "masterVolume" min = "0" max = "100" step ="1">
+          <input type ="range" id = "masterVolume" min = "0" max = "100" step ="1">
           <p class="center note"><span id="binaural-beats-value">0</span></p>
         </div>
 
@@ -101,7 +101,7 @@
 
       <div class="row">
         <div class="col s12 m2">
-          <div class="icon-block">
+          <div class="icon-block" id="delta" >
             <h2 class="center brown-text"><i class="material-icons">spa</i></h2>
             <h4 class="center">Delta</h4>
             <h5 class="center">1-4 Hz</h5>
@@ -113,10 +113,10 @@
         </div>
 
         <div class="col s12 m2">
-          <div class="icon-block">
+          <div class="icon-block" id = "theta">
             <h2 class="center brown-text"><i class="material-icons">spa</i></h2>
             <h4 class="center">Theta</h4>
-            <h5 class="center">4-7 Hz</h5>
+            <h5 class="center">4-8 Hz</h5>
             <ul class="center light">
               <li>Deep meditation, relaxation</li>
               <li>REM sleep</li>
@@ -128,7 +128,7 @@
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">spa</i></h2>
             <h4 class="center">Alpha</h4>
-            <h5 class = "center">7-13 Hz</h5>
+            <h5 class = "center">8-14 Hz</h5>
 
             <ul class="center light">
               <li>Relaxed, effortless alertness</li>
@@ -141,7 +141,7 @@
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">spa</i></h2>
             <h4 class="center">Beta</h4>
-            <h5 class="center">13-40 Hz</h5>
+            <h5 class="center">14-40 Hz</h5>
             <ul class="center light">
               <li>Alertness</li>
               <li>Increased problem solving</li>
@@ -153,7 +153,7 @@
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">spa</i></h2>
             <h4 class="center">Gamma</h4>
-            <h5 class="center">40-44 Hz</h5>
+            <h5 class="center">40+ Hz</h5>
             <ul class="center light">
               <li>Peak concentration</li>
               <li>High cognitive function</li>
@@ -183,7 +183,7 @@
       <div class = "col s12 m3">
         <button id="player1" type="button" >Rainforest</button>
         <audio id="rainforest">
-          <source src="sounds/rainforest.mp3" type="audio/mpeg">
+          <source src="sounds/rainforest1.mp3" type="audio/mpeg">
         </audio>
       </div>
 
@@ -195,11 +195,11 @@
         </audio>
       </div>
 
-    <!-- Rain -->
+    <!-- Thunderstorm -->
       <div class = "col s12 m3">
-        <button id="player3" type="button">Rain</button>
-        <audio id="rain">
-          <source src="sounds/rain.mp3" type="audio/mpeg">
+        <button id="player3" type="button">Thunderstorm</button>
+        <audio id="thunderstorm">
+          <source src="sounds/thunderstorm.mp3" type="audio/mpeg">
         </audio>
       </div>
 
@@ -256,10 +256,14 @@
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">One Click To Zen</h5>
+<!--
+          <a href="https://github.com/KatieAJenkins">
+         <img src="imgs/github.png" alt="github" style="width:42px;height:42px;border:0;"> -->
+
           <a class="grey-text text-lighten-4">Find me on GitHub</a> <a href ="https://github.com/KatieAJenkins">@katieajenkins</a>
         </div>
 
-        <div class="col l3 s12">
+        <div class="col l4 s12">
           <!-- <h5 class="white-text">Links</h5> -->
           <ul>
             <li><a class="white-text" href="index.html">Home</a></li>
