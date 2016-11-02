@@ -162,21 +162,50 @@ this.addEventListener("change", function(setBinauralValue) {
   oscillatorRight.frequency.value = newOscillatorRight;
   console.log(oscillatorRight.frequency.value);
 
-
-
-  //  + parseFloat(baseFrequencySlider.value) = oscillatorRight.frequency.value);
-
-  // console.log(baseFrequencySlider.value);
-  // var binauralFreq = parseFloat(oscillatorRight.frequency.value) + parseFloat ( baseFrequencySlider.value);
-  // console.log(binauralFreq);
-  // console.log(oscillatorRight.frequency.value);
-  // console.log(binauralFrequencySlider.value);
-  // console.log(oscillatorRight.frequency.value + baseFrequencySlider = binauralFrequencySlider.value);
-
-  // oscillatorLeft.frequency.value = baseFrequencySlider.value;
-
-  // console.log(oscillatorLeft.frequency.value);
-
 });
+
+// //--- Toggle Sounds ---//
+//--- Rainforest --//
+var rainforest = document.getElementById("rainforest");
+
+player1.addEventListener("click", function(playRainforest) {
+// function toggleSound() {
+// var rainforest = document.getElementById('rainforest');
+if (rainforest.paused) {
+console.log("play");
+  rainforest.play();
+} else {
+  rainforest.pause();
+  console.log("pause");
+  }
+});
+
+var ocean = document.getElementById("ocean");
+
+player2.addEventListener("click", function(playOcean) {
+// function toggleSound() {
+// var rainforest = document.getElementById('rainforest');
+if (ocean.paused) {
+console.log("play");
+  ocean.play();
+} else {
+  ocean.pause();
+  console.log("pause");
+  }
+});
+
+var rain = document.getElementById("rain");
+
+player3.addEventListener("click", function(playRain) {
+
+if (rain.paused) {
+console.log("play");
+  rain.play();
+} else {
+  rain.pause();
+  console.log("pause");
+  }
+});
+
 
 });//document.ready end tag
