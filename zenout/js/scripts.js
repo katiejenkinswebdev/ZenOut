@@ -169,14 +169,43 @@ this.addEventListener("change", function(setBinauralValue) {
     case (frequency <= 4):
       document.getElementById('delta').className += ' focus';
       document.getElementById('theta').className = 'icon-block';
+      document.getElementById('alpha').className = 'icon-block';
+      document.getElementById('beta').className = 'icon-block';
+      document.getElementById('gamma').className = 'icon-block';
       break;
     case (frequency > 4 && frequency <= 8):
       document.getElementById('theta').className
       += ' focus';
       document.getElementById('delta').className = 'icon-block';
+      document.getElementById('alpha').className = 'icon-block';
+      document.getElementById('beta').className = 'icon-block';
+      document.getElementById('gamma').className = 'icon-block';
       break;
-    // case (frequency > 8 && frequency <= 14):
-    // console.log('Theta');
+    case (frequency > 8 && frequency <= 14):
+      document.getElementById('alpha').className
+      += ' focus';
+      document.getElementById('delta').className = 'icon-block';
+      document.getElementById('theta').className = 'icon-block';
+      document.getElementById('beta').className = 'icon-block';
+      document.getElementById('gamma').className = 'icon-block';
+      break;
+    case (frequency > 14 && frequency <= 40):
+      document.getElementById('beta').className
+      += ' focus';
+      document.getElementById('alpha').className = 'icon-block';
+      document.getElementById('theta').className = 'icon-block';
+      document.getElementById('delta').className = 'icon-block';
+      document.getElementById('gamma').className = 'icon-block';
+      break;
+    case (frequency > 40):
+      document.getElementById('gamma').className
+      += ' focus';
+      document.getElementById('alpha').className = 'icon-block';
+      document.getElementById('theta').className = 'icon-block';
+      document.getElementById('beta').className = 'icon-block';
+      document.getElementById('delta').className = 'icon-block';
+      break;
+
     //   break;
     default:
 
