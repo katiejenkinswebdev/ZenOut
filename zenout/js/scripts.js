@@ -88,6 +88,8 @@ oscillatorRight.start();
 
 //---Slider Values---//
 //---Base Frequency Value---//
+document.getElementById("base-freq").value = "1";
+
 $(function(){
 	var currentBaseFreq = $('#base-freq-value');
 	$("#base-freq").change(function(){
@@ -98,26 +100,31 @@ $(function(){
 });
 
 //---Binaural Frequency Value---//
+document.getElementById("binaural-freq").value = "1";
+
 $(function(){
-	var currentBaseFreq = $('#binaural-freq-value');
+	var currentBinauralFreq = $('#binaural-freq-value');
 	$("#binaural-freq").change(function(){
-	    currentBaseFreq.html(this.value);
+	    currentBinauralFreq.html(this.value);
 	});
   //triggers current value to display on load
 	$("#binaural-freq").change();
 });
 
 //---Binaural Beats (Master Volume) Value---//
+document.getElementById("masterVolume").value = "0";
+
 $(function(){
-	var currentBaseFreq = $('#binaural-beats-value');
+	var currentMasterVolume = $('#binaural-beats-value');
 	$("#masterVolume").change(function(){
-	    currentBaseFreq.html(this.value);
+	    currentMasterVolume.html(this.value);
 	});
   //triggers current value to display on load
 	$("#masterVolume").change();
 });
 
 //---Master Volume Slider---//
+
 var masterVolumeSlider = document.getElementById("masterVolume");
 
 this.addEventListener("change", function(setVolume) {
