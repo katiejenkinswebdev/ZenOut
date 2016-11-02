@@ -57,23 +57,25 @@
   </div>
 
 <!-- Binaural Beats Container -->
-<!-- Base Frequency Slider -->
 <div class = "container">
   <div class = "row">
     <h3 class = "center">create your beats</h3>
 
+<!-- Base Frequency Slider -->
     <div class = "col s4 m4">
       <h5 class = "center">Base Frequency</h5>
       <input type ="range" name = "volume" id = "base-freq" min = "100" max = "400" step ="1">
       <p class="center note">Value: <span id="base-freq-value">0</span></p>
     </div>
 
+<!--Binaural Freq Slider -->
     <div class = "col s4 m4">
       <h5 class = "center">Binaural Frequency</h5>
       <input type ="range" name = "volume" id = "binaural-freq" min = "1" max = "44" step ="1">
       <p class="center note">Value: <span id="binaural-freq-value">0</span></p>
     </div>
 
+<!-- Master Volume Slider -->
     <div class = "col s4 m4">
       <h5 class = "center">Beat Volume</h5>
       <input type ="range" name = "volume" id = "masterVolume" min = "1" max = "100" step ="1">

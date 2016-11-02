@@ -59,7 +59,7 @@ merger.connect(masterVolume);
 panLeft.connect(merger, 0, 0);
 
 //set oscillator starting frequency
-// oscillatorLeft.frequency.value = 200;
+oscillatorLeft.frequency.value = 200;
 
 //set type of sound wave for oscillator
 oscillatorLeft.type = 'sine';
@@ -90,11 +90,9 @@ oscillatorRight.start();
 //---Base Frequency---//
 $(function(){
 	var currentBaseFreq = $('#base-freq-value');
-
 	$("#base-freq").change(function(){
 	    currentBaseFreq.html(this.value);
 	});
-
   //triggers current value to display on load
 	$("#base-freq").change();
 });
@@ -102,11 +100,9 @@ $(function(){
 //---Binaural Frequency---//
 $(function(){
 	var currentBaseFreq = $('#binaural-freq-value');
-
 	$("#binaural-freq").change(function(){
 	    currentBaseFreq.html(this.value);
 	});
-
   //triggers current value to display on load
 	$("#binaural-freq").change();
 });
@@ -114,11 +110,9 @@ $(function(){
 //---Binaural Beats (Master Volume)---//
 $(function(){
 	var currentBaseFreq = $('#binaural-beats-value');
-
 	$("#masterVolume").change(function(){
 	    currentBaseFreq.html(this.value);
 	});
-
   //triggers current value to display on load
 	$("#masterVolume").change();
 });
@@ -133,34 +127,26 @@ this.addEventListener("change", function(setVolume) {
 });
 
 //---Base Frequency Slider---//
-var baseFrequencySlider =
-console.log(document.getElementById("base-freq"));
+var baseFrequencySlider = document.getElementById("base-freq");
 
 
-this.addEventListener("change", function(setBaseFreq) {
-  console.log("clicked");
+this.addEventListener("change", function(setBaseValue) {
+  console.log(oscillatorLeft.frequency.value);
+  console.log(baseFrequencySlider.value);
+  // console.log(oscillatorLeft.frequency.value = baseFrequencySlider.value/100);
 
-  oscillatorLeft.frequency.value = baseFrequencySlider.value/400;
+  oscillatorLeft.frequency.value = baseFrequencySlider.value;
 
+  console.log(oscillatorLeft.frequency.value);
 
-      // oscillatorLeft.frequency.value =  baseFrequencySlider.value ;
-      // oscillatorLeft.detune.value = $('#base-freq').val();
 
 });
+  //
+  // oscillatorLeft.frequency.value = baseFrequencySlider.value/400;
+  //
+  //
+  //     oscillatorLeft.frequency.value =  baseFrequencySlider.value ;
+  //     oscillatorLeft.detune.value = $('#base-freq').val();
+
+
 });//document.ready end tag
-
-//to do's
-//controls to turn bbeats on
-//control to turn bbeats off
-//javascript takes base frequency in L ear
-//javascript calculates frequency minus binaural frequency = var newFrequency
-//javascript takes newFrequency and pumps into R ear
-
-
-//user inputs base frequency
-//user inputs binaural frequency
-//user inputs binaural frequency volume
-
-//upload wav files
-//connect 4 wavenodes into merger node
-//user selects wav file - bbeats is overlayed with wav file
