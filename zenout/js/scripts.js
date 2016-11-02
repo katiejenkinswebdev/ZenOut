@@ -29,7 +29,7 @@ const context = new AudioContext();
 //create Master Volume gain node and connect to destination
 
 var masterVolume = context.createGain();
-masterVolume.gain.value = 1;
+masterVolume.gain.value = 0;
 masterVolume.connect(context.destination);
 
 //--- LEFT SIDE --//
