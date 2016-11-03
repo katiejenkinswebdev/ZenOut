@@ -19,6 +19,7 @@
   <!--Nav Bar -->
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
+      <img src = "imgs/seedoflife.png" id = "seed" alt = "seedoflife">
       <a id="logo-container" href="index.html" class="brand-logo">ZenOut</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.html">Home</a></li>
@@ -51,17 +52,19 @@
     <div class="parallax"><img src="imgs/space.jpg" alt="Universe"></div>
   </div>
 
-  <div class = "center">
+  <div class = "center create">
     <h3>enjoy best with headphones</h3>
         <img  src="imgs/headphones.gif">
   </div>
 
 <!-- Binaural Beats Container -->
 <div class = "container">
-  <div class = "row">
+  <div class = "row create">
     <h3 class = "center">create your beats</h3>
+  </div>
 
     <!-- Base Frequency Slider -->
+    <div class = "row">
       <div class = "col s4 m4">
         <h5 class = "center">Base Frequency</h5>
         <input type ="range" id = "base-freq" min = "100" max = "400" step ="1">
@@ -70,7 +73,7 @@
 
     <!--Binaural Frequency Slider -->
       <div class = "col s4 m4">
-        <h5 class = "center">Binaural Frequency</h5>
+        <h5 class = "center">Brainwave Frequency</h5>
         <input type ="range" id = "binaural-freq" min = "1" max = "60" step ="1">
         <p class="center note"><span id="binaural-freq-value">0</span>Hz</p>
       </div>
@@ -81,16 +84,17 @@
           <input type ="range" id = "masterVolume" min = "0" max = "100" step ="1">
           <p class="center note"><span id="binaural-beats-value">0</span></p>
         </div>
+      </div>
 
-
-  </div> <!--row-->
 </div> <!--container-->
 
 
-<!-- Three Column Section   -->
+<!-- Column Section   -->
   <!-- <div class="container"> -->
     <div class="section">
-      <div class="row">
+      <div class = "row create">
+        <h5 class = "center">should text go here</h5>
+
         <div class="col s12 m1">
           <div class="icon-block">
             <!-- <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
@@ -99,7 +103,7 @@
           </div>
         </div>
 
-      <div class="row">
+      <!-- <div class="row"> -->
         <div class="col s12 m2">
           <div class="icon-block" id="delta" >
             <h2 class="center brown-text"><i class="material-icons">spa</i></h2>
@@ -118,7 +122,7 @@
             <h4 class="center">Theta</h4>
             <h5 class="center">4-8 Hz</h5>
             <ul class="center light">
-              <li>Deep meditation, relaxation</li>
+              <li>Meditation, relaxation</li>
               <li>REM sleep</li>
             </ul>
           </div>
@@ -131,7 +135,7 @@
             <h5 class = "center">8-14 Hz</h5>
 
             <ul class="center light">
-              <li>Relaxed, effortless alertness</li>
+              <li>Effortless alertness</li>
               <li>Reduce depression</li>
             </ul>
           </div>
@@ -161,7 +165,7 @@
           </div>
         </div>
 
-        <div class="row">
+        <!-- <div class="row"> -->
           <div class="col s12 m1">
             <div class="icon-block">
               <!-- <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
@@ -170,10 +174,9 @@
             </div>
           </div>
 
-      </div>
-    </div>
-  </div>
-</div> <!--section-->
+        </div>
+  </div> <!--section-->
+<!-- </div>  <!--container--> -->
 
 <!-- Audio Overlays -->
 <div class = "container">
@@ -184,7 +187,7 @@
     <div class = "row">
 
       <!--Rainforest-->
-      <div class = "col s12 m3">
+      <div class = "col s12 m3 center">
         <img class ="circle responsive-img" id = "player1" src="imgs/rainforest.jpg">
         <!-- <button id="player1" type="button" >Rainforest</button> -->
         <audio id="rainforest">
@@ -193,7 +196,7 @@
       </div>
 
     <!-- Ocean -->
-      <div class = "col s12 m3">
+      <div class = "col s12 m3 center">
         <img class ="circle responsive-img" id = "player2" src="imgs/ocean.jpg">
         <!-- <button id="player2" type="button" >Ocean</button> -->
         <audio id="ocean">
@@ -202,7 +205,7 @@
       </div>
 
     <!-- Thunderstorm -->
-      <div class = "col s12 m3">
+      <div class = "col s12 m3 center">
       <img class ="circle responsive-img" id = "player3" src="imgs/storm.jpg">
         <!-- <button id="player3" type="button">Thunderstorm</button> -->
         <audio id="thunderstorm">
@@ -211,7 +214,7 @@
       </div>
 
     <!-- Spotify Link-->
-      <div class = "col s12 m3">
+      <div class = "col s12 m3 center">
         <a href="https://accounts.spotify.com/en-US/login?continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F">
         <img src="imgs/spotify.png" class = "circle responsive-img" alt="Spotify" style="width:110px;height:105px;border:0;">
         </a>
