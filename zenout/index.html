@@ -54,56 +54,55 @@
 
   <div class = "center create">
     <h3>enjoy best with headphones</h3>
-        <img  src="imgs/headphones.gif">
+        <img id="phones" src="imgs/headphones.gif" alt="please put on headphones">
   </div>
 
 <!-- Binaural Beats Container -->
-<div class = "container">
-  <div class = "row create">
+<div class = "section ">
+  <div class = "row" id = "beatTitle">
     <h3 class = "center">create your beats</h3>
   </div>
+</div>
 
+<div class = "section  ">
     <!-- Master Volume Slider -->
+<div class = "container">
   <div class = "row">
     <div class = "col s4 m4">
-      <h5 class = "center">Volume</h5>
+      <h5 class = "center">Choose Volume</h5>
       <input type ="range" id = "masterVolume" min = "0" max = "100" step ="1">
       <p class="center"><span id="binaural-beats-value">0</span></p>
     </div>
 
     <!--Binaural Frequency Slider -->
     <div class = "col s4 m4">
-      <h5 class = "center">Brainwave Frequency</h5>
+      <h5 class = "center">Select Brainwave</h5>
       <input type ="range" id = "binaural-freq" min = "1" max = "60" step ="1">
       <p class="center"><span id="binaural-freq-value">0</span>Hz</p>
     </div>
 
     <!-- Base Frequency Slider -->
     <div class = "col s4 m4">
-      <h5 class = "center">Base Frequency</h5>
+      <h5 class = "center">Pick Frequency</h5>
       <input type ="range" id = "base-freq" min = "100" max = "400" step ="1">
       <p class="center note"><span id="base-freq-value">0</span>Hz</p>
     </div>
   </div>
-</div> <!--container-->
+</div> <!-- Container -->
+</div> <!--section -->
 
 
 <!-- Column Section   -->
   <!-- <div class="container"> -->
-    <div class="section">
-      <div class = "row create">
-        <h5 class = "center">should text go here</h5>
-
+    <div class="section ">
+      <div class = "row ">
         <div class="col s12 m1">
           <div class="icon-block">
-            <!-- <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">blank</h5>
-            <p class="light">Description</p> -->
           </div>
         </div>
 
       <!-- <div class="row"> -->
-        <div class="col s12 m2">
+        <div class="col s12 m2 icon-block">
           <div class="icon-block" id="delta" >
             <h2 class="center brown-text"><i class="material-icons">spa</i></h2>
             <h4 class="center">Delta</h4>
@@ -132,7 +131,6 @@
             <h2 class="center brown-text"><i class="material-icons">spa</i></h2>
             <h4 class="center">Alpha</h4>
             <h5 class = "center">8-14 Hz</h5>
-
             <ul class="center light">
               <li>Effortless alertness</li>
               <li>Reduce depression</li>
@@ -167,20 +165,18 @@
         <!-- <div class="row"> -->
           <div class="col s12 m1">
             <div class="icon-block">
-              <!-- <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-              <h5 class="center">blank</h5>
-              <p class="light">Description</p> -->
             </div>
           </div>
 
-        </div>
-  </div> <!--section-->
-<!-- </div>  <!--container-->
+    </div>
+
+</div>  <!--section-->
+
 
 <!-- Audio Overlays -->
-<div class = "container">
+<div class = "container create">
     <div class ="row">
-      <h3 class = "center">pick your favorite sound &amp zenout</h3>
+      <h3 class = "center">find your favorite sound &amp; zenout</h3>
     </div>
 
     <div class = "row">
@@ -190,7 +186,7 @@
         <img class ="waves-effect waves-light circle responsive-img tooltipped" id = "player1" src="imgs/rainforest.jpg" data-position="right" data-delay="20" data-tooltip="Rainforest">
         <!-- <button id="player1" type="button" >Rainforest</button> -->
         <audio id="rainforest">
-          <source src="sounds/rainforest1.mp3" type="audio/mpeg">
+          <source src="sounds/rainforest1.mp3" type="audio/mpeg" alt = "rainforest">
         </audio>
       </div>
 
@@ -200,7 +196,7 @@
         data-position="right" data-delay="20" data-tooltip="Ocean">
         <!-- <button id="player2" type="button" >Ocean</button> -->
         <audio id="ocean">
-          <source src="sounds/ocean.mp3" type="audio/mpeg">
+          <source src="sounds/ocean.mp3" type="audio/mpeg" alt = "ocean">
         </audio>
       </div>
 
@@ -210,7 +206,7 @@
       data-position="right" data-delay="20" data-tooltip="Thunderstorm">
         <!-- <button id="player3" type="button">Thunderstorm</button> -->
         <audio id="thunderstorm">
-          <source src="sounds/thunderstorm.mp3" type="audio/mpeg">
+          <source src="sounds/thunderstorm.mp3" type="audio/mpeg" alt = "thunderstorm">
         </audio>
       </div>
 

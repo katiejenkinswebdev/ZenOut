@@ -69,8 +69,9 @@ p {
 }
 
 .icon-block {
-  height: 300px;
-  padding: 15px;
+  height:300px;
+  padding-top: 10px;
+
 }
 .icon-block .material-icons {
   font-size: inherit;
@@ -78,6 +79,7 @@ p {
 
 footer.page-footer {
   margin: 0;
+  background-image: url("stardust.png");
 }
 
 
@@ -92,9 +94,41 @@ footer.page-footer {
 }
 
 .focus {
-  background-color: #cfd8dc;
+  background: url("sparkle1.jpg");
+  color: white;
+  height: 300px;
+  box-shadow: 0 0 5px 5px white inset;
+  /*width: 100px;*/
+  /*background-color: #cfd8dc;*/
+}
+
+.material-icons: {
+  color: white;
+}
+
+.beats {
+/*background-color: red;*/
+background-image: url("swirl_pattern.png");
+/*padding-top: 10px;*/
+}
+
+#beatTitle {
+  /*padding-top: 25px;*/
 }
 
 .create {
-  padding: 25px;
+  padding: 50px 0px 75px 0px;
+}
+
+#phones {
+  padding: 75px 0px 0px 0px;
+}
+
+.create {
+  padding-top: 75px;
+  padding-bottom: 50px;
+}
+
+.thumb {
+  display:none;
 }
