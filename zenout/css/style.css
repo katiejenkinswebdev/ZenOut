@@ -10,6 +10,11 @@ nav ul a,
 nav .brand-logo {
   color: #444;
 }
+#seed {
+  margin-top: 7px;
+  height:50px;
+  width:50px;
+}
 
 p {
   line-height: 2rem;
@@ -33,11 +38,6 @@ p {
   font-size: 30px;
 }
 
-#seed {
-  margin-top: 7px;
-  height:50px;
-  width:50px;
-}
 
 .learn {
   height: 200px ;
@@ -131,4 +131,8 @@ background-image: url("swirl_pattern.png");
 
 .thumb {
   display:none;
+}
+
+#footimgs {
+  color: white;
 }
