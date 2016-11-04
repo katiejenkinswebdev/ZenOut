@@ -133,6 +133,10 @@ background-image: url("swirl_pattern.png");
   display:none;
 }
 
-#footimgs {
-  color: white;
+.fa {
+  padding-bottom: 20px;
+}
+
+.links {
+  padding-top: 20px;
 }

@@ -219,6 +219,8 @@ player1.addEventListener("click", function(playRainforest) {
 if (rainforest.paused) {
 console.log("play");
   rainforest.play();
+  thunderstorm.pause();
+  ocean.pause();
 } else {
   rainforest.pause();
   console.log("pause");
@@ -234,6 +236,8 @@ player2.addEventListener("click", function(playOcean) {
 if (ocean.paused) {
 console.log("play");
   ocean.play();
+  rainforest.pause();
+  thunderstorm.pause();
 } else {
   ocean.pause();
   console.log("pause");
@@ -248,6 +252,8 @@ player3.addEventListener("click", function(playThunderstorm) {
 if (thunderstorm.paused) {
 console.log("play");
   thunderstorm.play();
+  ocean.pause();
+  rainforest.pause();
 } else {
   thunderstorm.pause();
   console.log("pause");
