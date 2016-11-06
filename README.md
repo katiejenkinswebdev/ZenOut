@@ -14,6 +14,8 @@ ZenOut works best with headphones and you may find that raw binaural beats may n
 <li>Now zenout!</li>
 </ol>
 
+https://cloud.githubusercontent.com/assets/21694298/20042898/457cfe96-a43f-11e6-8463-824e6cc59d57.png
+
 Expand your knowledge on binaural beats and ZenOut by visiting the Learn page.
 
 Many thanks to all who made this project possible especially 
