@@ -9,20 +9,18 @@
 
     <!-- Materialize CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <!--Font Awesome-->
     <script src="https://use.fontawesome.com/eb9acafe7e.js">
     </script>
-
 </head>
 
 <body>
-
     <!--Nav Bar -->
-    <nav class="white" role="navigation">
+    <nav class="white">
         <div class="nav-wrapper container">
             <img src="imgs/seedoflife.png" id="seed" alt="seedoflife">
             <a id="logo-container" href="index.html" class="brand-logo">ZenOut</a>
@@ -42,7 +40,6 @@
         </div>
     </nav>
 
-
     <!-- 1st Parallax Container -->
     <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
@@ -52,11 +49,9 @@
                     <h5 class="header col s12 light">binaural beat experience</h5>
                 </div>
             </div>
-
         </div>
         <div class="parallax"><img src="imgs/space.jpg" alt="Universe"></div>
     </div>
-
     <div class="center create">
         <h3>enjoy best with headphones</h3>
         <img id="phones" src="imgs/headphones.gif" alt="please put on headphones">
@@ -68,8 +63,7 @@
             <h3 class="center">create your beats</h3>
         </div>
     </div>
-
-    <div class="section  ">
+    <div class="section">
         <!-- Master Volume Slider -->
         <div class="container">
             <div class="row">
@@ -98,17 +92,13 @@
     </div>
     <!--section -->
 
-
     <!-- Column Section   -->
-    <!-- <div class="container"> -->
     <div class="section ">
         <div class="row ">
             <div class="col s12 m1">
                 <div class="icon-block">
                 </div>
             </div>
-
-            <!-- <div class="row"> -->
             <div class="col s12 m2 icon-block">
                 <div class="icon-block" id="delta">
                     <h2 class="center brown-text"><i class="material-icons">spa</i></h2>
@@ -120,7 +110,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="col s12 m2">
                 <div class="icon-block" id="theta">
                     <h2 class="center brown-text"><i class="material-icons">spa</i></h2>
@@ -132,7 +121,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="col s12 m2">
                 <div class="icon-block" id="alpha">
                     <h2 class="center brown-text"><i class="material-icons">spa</i></h2>
@@ -144,7 +132,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="col s12 m2">
                 <div class="icon-block" id="beta">
                     <h2 class="center brown-text"><i class="material-icons">spa</i></h2>
@@ -156,7 +143,6 @@
                     </ul>
                 </div>
             </div>
-
             <div class="col s12 m2">
                 <div class="icon-block" id="gamma">
                     <h2 class="center brown-text"><i class="material-icons">spa</i></h2>
@@ -168,51 +154,41 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- <div class="row"> -->
             <div class="col s12 m1">
                 <div class="icon-block">
                 </div>
             </div>
-
         </div>
-
     </div>
-    <!--section-->
-
 
     <!-- Audio Overlays -->
     <div class="container create">
         <div class="row">
             <h3 class="center">find your favorite sound &amp; zenout</h3>
         </div>
-
         <div class="row">
 
             <!--Rainforest-->
             <div class="col s12 m3 center">
-                <img class="waves-effect waves-light circle responsive-img tooltipped" id="player1" src="imgs/rainforest.jpg" data-position="bottom" data-delay="20" data-tooltip="Rainforest">
-                <!-- <button id="player1" type="button" >Rainforest</button> -->
+                <img class="waves-effect waves-light circle responsive-img tooltipped" id="player1" src="imgs/rainforest.jpg" data-position="bottom" data-delay="20" data-tooltip="Rainforest" alt="rainforest">
                 <audio id="rainforest">
-          <source src="sounds/rainforest1.mp3" type="audio/mpeg" alt = "rainforest">
+          <source src="sounds/rainforest1.mp3" type="audio/mpeg">
         </audio>
             </div>
 
             <!-- Ocean -->
             <div class="col s12 m3 center">
-                <img class="waves-effect waves-light circle responsive-img tooltipped" id="player2" src="imgs/ocean.jpg" data-position="bottom" data-delay="20" data-tooltip="Ocean">
-                <!-- <button id="player2" type="button" >Ocean</button> -->
+                <img class="waves-effect waves-light circle responsive-img tooltipped" id="player2" src="imgs/ocean.jpg" alt="ocean" data-position="bottom" data-delay="20" data-tooltip="Ocean">
                 <audio id="ocean">
-          <source src="sounds/ocean.mp3" type="audio/mpeg" alt = "ocean">
+          <source src="sounds/ocean.mp3" type="audio/mpeg">
         </audio>
             </div>
 
             <!-- Thunderstorm -->
             <div class="col s12 m3 center">
-                <img class="waves-effect waves-light circle responsive-img tooltipped" id="player3" src="imgs/storm.jpg" data-position="bottom" data-delay="20" data-tooltip="Thunderstorm">
-                <!-- <button id="player3" type="button">Thunderstorm</button> -->
+                <img class="waves-effect waves-light circle responsive-img tooltipped" id="player3" src="imgs/storm.jpg" alt="thunderstorm" data-position="bottom" data-delay="20" data-tooltip="Thunderstorm">
                 <audio id="thunderstorm">
-          <source src="sounds/thunderstorm.mp3" type="audio/mpeg" alt = "thunderstorm">
+          <source src="sounds/thunderstorm.mp3" type="audio/mpeg">
         </audio>
             </div>
 
@@ -221,12 +197,9 @@
                 <a href="https://accounts.spotify.com/en-US/login?continue=https:%2F%2Fwww.spotify.com%2Fus%2Faccount%2Foverview%2F">
                     <img src="imgs/spotify.png" class="circle responsive-img tooltipped" alt="Spotify" style="width:110px;height:105px;border:0;" data-position="bottom" data-delay="20" data-tooltip="Login to Spotify"></a>
             </div>
-
         </div>
     </div>
     <!-- Audio Overlay Container-->
-
-
 
     <!--Final Text-->
     <div class="row">
@@ -242,7 +215,6 @@
             </div>
             <div class="parallax"><img src="imgs/universe.jpg" alt="Universe"></div>
         </div>
-
     </div>
 
     <!--Footer-->
@@ -258,7 +230,6 @@
                         <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
                     </a>
                 </div>
-
                 <div class="col l4 s12 links">
                     <ul>
                         <li><a class="white-text" href="index.html">Home</a></li>
@@ -269,7 +240,6 @@
             </div>
         </div>
     </footer>
-
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
