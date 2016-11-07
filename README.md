@@ -20,6 +20,8 @@ https://cloud.githubusercontent.com/assets/21694298/20042905/64fa51b0-a43f-11e6-
 https://cloud.githubusercontent.com/assets/21694298/20042899/457d7e20-a43f-11e6-8478-401665aef21d.png
 https://cloud.githubusercontent.com/assets/21694298/20042897/457c6d78-a43f-11e6-8d85-824a2ff27633.png
 
+For more instructions, please view the YouTube video <a href = "https://youtu.be/gNZgFtGTnfM">here</a>.
+
 Expand your knowledge on binaural beats and ZenOut by visiting the Learn page.
 
 Special thanks to all who made this project possible especially <a href = "https://github.com/HurdAudio">Devon Hurd</a> who shared his great sound mixing knowledge!
