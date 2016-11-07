@@ -22,4 +22,4 @@ https://cloud.githubusercontent.com/assets/21694298/20042897/457c6d78-a43f-11e6-
 
 Expand your knowledge on binaural beats and ZenOut by visiting the Learn page.
 
-Many thanks to all who made this project possible especially 
+Special thanks to all who made this project possible especially <a href = "https://github.com/HurdAudio">Devon Hurd</a> who shared his great sound mixing knowledge!
