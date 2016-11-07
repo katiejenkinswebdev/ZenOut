@@ -9,7 +9,7 @@ ZenOut works best with headphones and you may find that raw binaural beats may n
 <ol>
 <li>Pop in your headphones and select your volume.</li>
 <li>Use the brainwave list below the sliders to find a brainwave frequency you'd like to experience. Move the Brainwave slider to find that brainwave Hz level.</li>
-<li>Find a base frequency best suits you on the final slider.</li>
+<li>Find a base frequency that best suits you on the final slider.</li>
 <li>Pick your favorite nature sound or login into your Spotify to play music over the binaural beats.
 <li>Now zenout!</li>
 </ol>
