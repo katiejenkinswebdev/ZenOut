@@ -1,6 +1,6 @@
 <h1>Welcome to ZenOut!</h1>
 
-ZenOut was created for you. When needing to change your current state of mind, turn to ZenOut's use of binaural 
+<a href = "http://zenout.surge.sh/">ZenOut</a> was created for you. When needing to change your current state of mind, turn to ZenOut's use of binaural 
 beats to relax and soothe your brain or to turn your brain up to full functioning power! 
 
 ZenOut works best with headphones and you may find that raw binaural beats may not sound too pretty. So as long as the website  stays open, the beats you create will play in the background of any music or sounds you'd like to overlay them with & still work their magic.
