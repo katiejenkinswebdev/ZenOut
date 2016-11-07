@@ -139,3 +139,7 @@ background-image: url("swirl_pattern.png");
 .links {
   padding-top: 20px;
 }
+
+li {
+  margin: 10px;
+}
