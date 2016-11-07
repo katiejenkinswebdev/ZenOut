@@ -24,4 +24,4 @@ For more instructions, please view the YouTube video <a href = "https://youtu.be
 
 Expand your knowledge on binaural beats and ZenOut by visiting the Learn page.
 
-Special thanks to all who made this project possible especially <a href = "https://github.com/HurdAudio">Devon Hurd</a> who shared his great sound mixing knowledge!
+Special thanks to all who made this project possible especially <a href = "https://github.com/HurdAudio">Devon Hurd</a> who shared his vast sound mixing knowledge!
