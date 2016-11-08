@@ -10,6 +10,7 @@ ZenOut works best with headphones and you may find that raw binaural beats thems
 <h2>To Get Started</h2>
 
 1. Pop in your headphones.
+
 ![homepage](zenout/readme/zenout_homepage.png)
 
 2. Scroll down to the beat maker. First, select your volume. Use the brainwave list below the sliders to find a brainwave frequency you'd like to experience. Move the Brainwave slider to pick that brainwave's Hz level. Find a base frequency that best suits you on the final slider.
