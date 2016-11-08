@@ -10,8 +10,7 @@ var $xhr =  $.getJSON('http://api.forismatic.com/api/1.0/?method=getQuote&lang=e
 $xhr.done(function(data) {
     if ($xhr.status === 200) {
       $(quoteScreen).text($xhr.responseJSON.quoteText + " " + $xhr.responseJSON.quoteAuthor);
-    }
-
+    }   
 });
 
 $xhr.fail(function(err) {
@@ -130,7 +129,6 @@ var masterVolumeSlider = document.getElementById("masterVolume");
 this.addEventListener("change", function(setVolume) {
 
   masterVolume.gain.value = masterVolumeSlider.value/100;
-  // console.log(masterVolume.gain.value);
 });
 
 //---Base Frequency Slider---//
@@ -138,13 +136,8 @@ var baseFrequencySlider = document.getElementById("base-freq");
 
 
 this.addEventListener("change", function(setBaseValue) {
-  // console.log(oscillatorLeft.frequency.value);
-  // console.log(baseFrequencySlider.value);
-  // console.log(oscillatorLeft.frequency.value = baseFrequencySlider.value/100);
 
   oscillatorLeft.frequency.value = baseFrequencySlider.value;
-
-  // console.log(oscillatorLeft.frequency.value);
 
 });
 
@@ -153,14 +146,9 @@ var binauralFrequencySlider = document.getElementById("binaural-freq");
 
 this.addEventListener("change", function(setBinauralValue) {
 
-  // console.log(parseFloat(oscillatorRight.frequency.value));
   var newOscillatorRight = parseFloat(binauralFrequencySlider.value) + parseFloat(baseFrequencySlider.value);
-  // console.log(newOscillatorRight);
 
-
-  //  newOscillatorRight = oscillatorRight.value;
   oscillatorRight.frequency.value = newOscillatorRight;
-  // console.log(oscillatorRight.frequency.value);
 
 //--- Highlight Binaural Frequency--//
   var frequency = document.getElementById("binaural-freq").value;
@@ -214,10 +202,8 @@ this.addEventListener("change", function(setBinauralValue) {
 var rainforest = document.getElementById("rainforest");
 
 player1.addEventListener("click", function(playRainforest) {
-// function toggleSound() {
-// var rainforest = document.getElementById('rainforest');
 if (rainforest.paused) {
-console.log("play");
+  console.log("play");
   rainforest.play();
   thunderstorm.pause();
   ocean.pause();
@@ -231,10 +217,8 @@ console.log("play");
 var ocean = document.getElementById("ocean");
 
 player2.addEventListener("click", function(playOcean) {
-// function toggleSound() {
-// var rainforest = document.getElementById('rainforest');
 if (ocean.paused) {
-console.log("play");
+  console.log("play");
   ocean.play();
   rainforest.pause();
   thunderstorm.pause();
@@ -248,18 +232,14 @@ console.log("play");
 var thunderstorm = document.getElementById("thunderstorm");
 
 player3.addEventListener("click", function(playThunderstorm) {
-
 if (thunderstorm.paused) {
-console.log("play");
+  console.log("play");
   thunderstorm.play();
   ocean.pause();
   rainforest.pause();
-} else {
+  } else {
   thunderstorm.pause();
   console.log("pause");
-  }
-
-});
-
-
+    }
+  });
 });//document.ready end tag
