@@ -1,4 +1,4 @@
-<h1>Welcome to ZenOut!</h1>
+#Welcome to ZenOut!
 
 <a href = "http://zenout.surge.sh/">ZenOut</a> was created for you. When needing to change your current state of mind, turn to ZenOut's use of binaural 
 beats to relax and soothe your brain or to turn your brain up to full functioning power! 
