@@ -17,6 +17,7 @@ ZenOut works best with headphones and you may find that raw binaural beats thems
 ![beats](zenout/readme/beatmaker.png)
 
 3. Pick your favorite nature sound or login into your Spotify to play music over the binaural beats.
+
 ![sounds](zenout/readme/sounds.png)
 
 4. Now zenout!
