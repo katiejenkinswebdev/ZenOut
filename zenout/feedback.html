@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+
+    <title>ZenOut -- Feedback</title>
+
+    <!-- Materialize CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <!--Font Awesome-->
+    <script src="https://use.fontawesome.com/eb9acafe7e.js">
+    </script>
+</head>
+
+<body>
+    <!--Nav Bar -->
+    <nav class="white">
+        <div class="nav-wrapper container">
+            <img src="imgs/seedoflife.png" id="seed" alt="seedoflife">
+            <a id="logo-container" href="index.html" class="brand-logo">ZenOut</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+
+            <!--Mobile Menu -->
+            <ul id="nav-mobile" class="side-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+            <a href="index.html" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <!-- 1st Parallax Container -->
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <h1 class="animated pulse header center white-text text-lighten-2">Help Build Your Zen</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light">this site was built for you</h5>
+                </div>
+            </div>
+            <div class="parallax"><img src="imgs/space_earth.jpg" alt="Universe"></div>
+        </div>
+    </div>
+
+    <!-- Form   -->
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+                <div class="col s1 m12">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                        <h5 class="center">Please share how we can make it better!</h5>
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input id="first_name" type="text" class="validate">
+                                        <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">Thoughts, requests, burning desires, zen needs...</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <button class=" btn waves-effect waves-light" type="submit" name="action" onclick="Materialize.toast('Thank you for sharing!', 10000)">Submit
+            <i class="material-icons right">send</i>
+      </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="page-footer blue-grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">One Click To Zen</h5>
+                    <a href="https://github.com/KatieAJenkins">
+                        <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/katie-jenkins">
+                        <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="col l4 s12">
+                    <ul>
+                        <li><a class="white-text" href="index.html">Home</a></li>
+                        <li><a class="white-text" href="learn.html">Learn</a></li>
+                        <li><a class="white-text" href="feedback.html">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+</html>
