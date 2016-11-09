@@ -27,7 +27,7 @@ After choosing your beats, enjoy an extra dose of goodness with a new inspiring 
 
 Expand your knowledge on binaural beats and check out more great resources by visiting the Learn page.
 
-Check out the demo! [![youtubevideo](readme/youtube.png)](https://www.youtube.com/watch?v=gNZgFtGTnfM)
+Check out the demo! [![youtubevideo](readme/youtube.png)](https://www.youtube.com/watch?v=hTBv7fB1ofA)
 
 Special thanks to all who made this project possible especially <a href = "https://github.com/HurdAudio">Devin Hurd</a> who shared his vast sound mixing knowledge!
 
