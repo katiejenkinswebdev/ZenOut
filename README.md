@@ -26,5 +26,5 @@ Expand your knowledge on binaural beats and check out more great resources by vi
 
 Check out the demo! [![youtubevideo](readme/youtube.png)](https://www.youtube.com/watch?v=hTBv7fB1ofA)
 
-Special thanks to all who made this project possible especially [Devin Hurd](https://github.com/HurdAudio) who shared his vast sound mixing knowledge!
+Special thanks to all who made this project possible especially [Devin Hurd](https://github.com/HurdAudio) who shared his vast sound mixing knowledge, Brendan Haskins for his inspirational [polyphemus](https://github.com/ziopads/polyphemus), and Steve Kinney for [this](https://www.youtube.com/watch?v=56spBAgOYfg) video!
 
