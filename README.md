@@ -1,5 +1,6 @@
  
-#Welcome to ZenOut!
+# Welcome to ZenOut!
+
 [ZenOut](zenout.surge.sh) was created for you. When needing to change your current state of mind, turn to ZenOut's use of binaural 
 beats to relax and soothe your brain or to turn your brain up to full functioning power! 
 
@@ -7,7 +8,7 @@ ZenOut uses the Web Audio API to pump two specially paired frequencies into each
 
 ZenOut works best with headphones and you may find that raw binaural beats themselves may not sound that soothing. Great news! As long as ZenOut stays open, the beats you create will play in the background of your music & still work their magic. We've provided a few of our favorite sound samples on the website and a link to log into your Spotify.
 
-##To Get Started
+## To Get Started
 
 * Pop in your headphones.
 ![homepage](readme/zenout_homepage.png)
