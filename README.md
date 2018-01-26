@@ -1,8 +1,8 @@
- 
+
 # Welcome to ZenOut!
 
-[ZenOut](zenout.surge.sh) was created for you. When needing to change your current state of mind, turn to ZenOut's use of binaural 
-beats to relax and soothe your brain or to turn your brain up to full functioning power! 
+[ZenOut](zenout.surge.sh) was created for you. When needing to change your current state of mind, turn to ZenOut's use of binaural
+beats to relax and soothe your brain or to turn your brain up to full functioning power!
 
 ZenOut uses the Web Audio API to pump two specially paired frequencies into each ear to create a third wave that is interpreted by the brain - the binaural beat. This binaural beat is correlated with a specific frame of mind - from deep REM sleep to ultimate problem solving mode!
 
@@ -13,19 +13,22 @@ ZenOut works best with headphones and you may find that raw binaural beats thems
 * Pop in your headphones.
 ![homepage](readme/zenout_homepage.png)
 
-* Scroll down to the beat maker. First, select your volume. Use the brainwave list below the sliders to find a brainwave frequency you'd like to experience. Move the Brainwave slider to pick that brainwave's Hz level. Find a base frequency that best suits you on the final slider.
+* Scroll down to the beat maker.
+1. First, select your volume.
+2. Use the brainwave list below the sliders to find a brainwave frequency you'd like to experience.
+3. Move the Brainwave slider to pick that brainwave's Hz level.
+4. Find a base frequency that best suits you on the final slider.
 ![beats](readme/beatmaker.png)
 
 * Pick your favorite nature sound or login into your Spotify to play music over the binaural beats.
 ![sounds](readme/sounds.png)
 
-* Now zenout!
+* Now ZenOut!
 
-After choosing your beats, enjoy an extra dose of goodness with a new inspiring quote each visit thanks to the Forismatic API.
+Enjoy an extra dose of goodness with a new inspiring quote each visit, thanks to the Forismatic API.
 
-Expand your knowledge on binaural beats and check out more great resources by visiting the Learn page.
+Expand your knowledge by visiting the Learn page.
 
 For more instructions, check out the demo: [![youtubevideo](readme/youtube.png)](https://www.youtube.com/watch?v=hTBv7fB1ofA)
 
 Special thanks to all who made this project possible especially [Devin Hurd](https://github.com/HurdAudio) who shared his vast sound mixing knowledge, Brendan Haskins for his inspirational [polyphemus](http://ziopads-form.s3-website-us-east-1.amazonaws.com/), and Steve Kinney for [this](https://www.youtube.com/watch?v=56spBAgOYfg) video!
-
