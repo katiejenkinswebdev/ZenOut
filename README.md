@@ -23,7 +23,7 @@ ZenOut works best with headphones and you may find that raw binaural beats thems
 * Pick your favorite nature sound or login into your Spotify to play music over the binaural beats.
 ![sounds](readme/sounds.png)
 
-* Now ZenOut!
+Now ZenOut!
 
 Enjoy an extra dose of goodness with a new inspiring quote each visit, thanks to the Forismatic API.
 
