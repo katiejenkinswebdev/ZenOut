@@ -17,7 +17,6 @@ $( document ).ready(function() {
       console.log(err);
   });
 
-
   //-------Binaural Beats Application---------//
   //allow to work on multiple browsers
   window.AudioContext = window.AudioContext || window.webkitAudioContext;
@@ -26,7 +25,6 @@ $( document ).ready(function() {
   const context = new AudioContext();
 
   //create Master Volume gain node and connect to destination
-
   var masterVolume = context.createGain();
   masterVolume.gain.value = 0;
   masterVolume.connect(context.destination);
@@ -65,7 +63,6 @@ $( document ).ready(function() {
 
   //oscillator control
   oscillatorLeft.start();
-  // oscillator.stop();
 
   //--- RIGHT SIDE ---//
   //create oscillatorRight and gainRight
@@ -83,7 +80,6 @@ $( document ).ready(function() {
   oscillatorRight.frequency.value = 100;
   oscillatorRight.type = 'sine';
   oscillatorRight.start();
-  // oscillatorRight.stop();
 
   //---Slider Values---//
   //---Base Frequency Value---//
@@ -104,7 +100,7 @@ $( document ).ready(function() {
   $(function(){
     var currentBinauralFreq = $('#binaural-freq-value');
     $("#binaural-freq").change(function(){
-        currentBinauralFreq.html(this.value);
+      currentBinauralFreq.html(this.value);
     });
     //triggers current value to display on load
     $("#binaural-freq").change();
@@ -123,31 +119,24 @@ $( document ).ready(function() {
   });
 
   //---Master Volume Slider---//
-
   var masterVolumeSlider = document.getElementById("masterVolume");
 
   this.addEventListener("change", function(setVolume) {
-
     masterVolume.gain.value = masterVolumeSlider.value/100;
   });
 
   //---Base Frequency Slider---//
   var baseFrequencySlider = document.getElementById("base-freq");
 
-
   this.addEventListener("change", function(setBaseValue) {
-
     oscillatorLeft.frequency.value = baseFrequencySlider.value;
-
   });
 
   //---Binaural Frequency Slider ---//
   var binauralFrequencySlider = document.getElementById("binaural-freq");
 
   this.addEventListener("change", function(setBinauralValue) {
-
     var newOscillatorRight = parseFloat(binauralFrequencySlider.value) + parseFloat(baseFrequencySlider.value);
-
     oscillatorRight.frequency.value = newOscillatorRight;
 
   //--- Highlight Binaural Frequency--//
@@ -203,13 +192,11 @@ $( document ).ready(function() {
 
   player1.addEventListener("click", function(playRainforest) {
     if (rainforest.paused) {
-      console.log("play");
       rainforest.play();
       thunderstorm.pause();
       ocean.pause();
     } else {
       rainforest.pause();
-      console.log("pause");
       }
   });
 
